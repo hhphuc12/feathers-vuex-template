@@ -1,0 +1,28 @@
+.main-layout {
+    display: flex;
+    min-height: 100vh;
+}
+.menu {
+    flex: 1;
+    min-width: 200px;
+    background-color: #1C363F;
+    div {
+        font-size: 14px;
+        padding: 16px 30px;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+        &:hover {
+            background-color: rgba(80, 92, 127, 0.5);
+            cursor: pointer;
+        }
+        &.active {
+            background-color: #505C7F;
+            border-left: solid 3px #FFFD00;
+        }
+    }
+}
+.content {
+    flex: 5;
+    background-color: #237891;
+}
